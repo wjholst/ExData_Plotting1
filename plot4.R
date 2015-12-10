@@ -21,8 +21,8 @@ with (powerData, {
     plot(datetime, Sub_metering_1, type="l", ylab="Energy Submetering (watt-hour)", xlab="",main="Plot 3")
     lines(datetime, Sub_metering_2, type="l", xlab="",col="Red")
     lines(datetime, Sub_metering_3, type="l", xlab="",col="Blue")
-    legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, bty="n",
-           legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+    legend("top", col=c("black", "red", "blue"), lty=1, lwd=2, 
+           legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),cex=1,bty = "n")
     
     plot(datetime,Global_reactive_power,type="l",xlab="",ylab="Global Reactive Power (kW)",main="Plot 4")
     mtext("Single Home Power/Energy Usage - 2/1/2007-2/2/2007",outer=T)

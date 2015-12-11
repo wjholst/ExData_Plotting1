@@ -13,7 +13,7 @@ dim(powerData) # should be 2880x9
 
 # Plot1
 par(mfrow=c(1,1),mar=c(4,4,2,1),oma=c(0,0,2,0))
-hist(powerData$Global_active_power,main ="Plot 1 - Global Active Power",xlab="Global Active Power (kW)")
+hist(powerData$Global_active_power,main ="Plot 1 - Global Active Power",xlab="Global Active Power (kW)",col="Red")
 dev.copy(png, file="plot1.png", height=480, width=480)
 dev.off()
 
